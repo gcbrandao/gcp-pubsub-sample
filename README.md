@@ -1,9 +1,6 @@
 # GCP Pubsub Sample Lab
 > How to use GCP Pubsub message queue with Spring Boot and Spring Cloud 
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
 
 This project cover how to use a GCP PubSub service with Java + Spring Boot and Spring Cloud. We have simple exemples 
 publising/consuming an single String but also we have more complex examples covering how to publish and consume objects 
