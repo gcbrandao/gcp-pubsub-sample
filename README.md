@@ -36,26 +36,19 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Development setup
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+This project don´t cover how to setup GCP environment.
 
+First clone this project to your environment
 ```sh
-make install
-npm test
+ git clone https://github.com/gcbrandao/gcp-pubsub-sample.git
 ```
+Then import to your favourite IDE and start work
+
+
 
 ## Release History
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
+* 0.0.1-SNAPSHOT
     * Work in progress
 
 ## Meta
