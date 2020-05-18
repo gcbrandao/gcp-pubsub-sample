@@ -30,9 +30,40 @@ and then run the JAR file, as follows:
 
 ## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+**Testing the application**
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+Now that the application is running, you can test it. I suggest you to use Postmant to send requests to it´s applications.
+
+**Simple message Postman:**
+```sh
+GET http://localhost:8080/filas/publish/TESTE NOVA MANSAGEM
+```
+**Simple message curl:**
+```sh
+curl --location --request GET 'http://localhost:8080/filas/publish/TESTE NOVA MANSAGEM'
+```
+
+**Complex Message ( with object serializer) Postman:**
+```sh
+POST http://localhost:8080/filas/
+PAYLOAD:
+{
+    "nome": "Mestre Yoda",
+    "login": "yoda-root",
+    "dataNascimento": "1978-03-13"
+}
+```
+
+**Complex Message ( with object serializer) Curl:**
+```sh
+curl --location --request POST 'http://localhost:8080/filas/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "nome": "Mestre Yoda",
+    "login": "yoda-root",
+    "dataNascimento": "1978-03-13"
+}'
+```
 
 ## Development setup
 
